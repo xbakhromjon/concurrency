@@ -22,6 +22,7 @@ class ExecutionSchedullingDemo {
         VegetableChopper olivia = new VegetableChopper("Olivia");
         VegetableChopper barron = new VegetableChopper("Barron");
         olivia.start();
+
         barron.start();
         Thread.sleep(1000);
         VegetableChopper.chopping = false;

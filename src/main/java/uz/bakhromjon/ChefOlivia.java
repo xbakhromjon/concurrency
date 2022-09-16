@@ -15,6 +15,9 @@ public class ChefOlivia implements Runnable {
 
 class ThreadLifeCycleDemo {
     public static void main(String[] args) throws InterruptedException {
+        StringBuilder as = new StringBuilder("as");
+        as.append(12);
+        System.out.println(as);
         System.out.println("Barron started & requesting Olivia's help.");
         Thread olivia = new Thread(new ChefOlivia());
         System.out.println("Olivia state: " + olivia.getState().name());
